@@ -8,12 +8,12 @@ var settings = {
   mobileFirst: true, /* mobileFirst ? 'min-width' : 'max-width' */
   container: {
     maxWidth: '1420px', /* max-width оn very large screen */
-    fields: '40px' /* side fields */
+    fields: '30px' /* side fields */
   },
   breakPoints: {
     xlg: {
       width: '1410px',
-      fields: '40px'/* -> @media (max-width: 1100px) */
+      fields: '30px'/* -> @media (max-width: 1100px) */
     },
     lg: {
       width: '1100px', /* -> @media (max-width: 1100px) */
@@ -28,7 +28,7 @@ var settings = {
     },
     xs: {
       width: '560px',
-      fields: '5px',
+      fields: '10px',
       offset: '6px'
     },
     xxs: {
