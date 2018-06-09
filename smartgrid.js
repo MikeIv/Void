@@ -4,7 +4,7 @@ var smartgrid = require('smart-grid');
 var settings = {
   outputStyle: 'less', /* less || scss || sass || styl */
   columns: 24, /* number of grid columns */
-  offset: '20px', /* gutter width px || % */
+  offset: '10px', /* gutter width px || % */
   mobileFirst: true, /* mobileFirst ? 'min-width' : 'max-width' */
   container: {
     maxWidth: '1420px', /* max-width оn very large screen */
@@ -24,17 +24,17 @@ var settings = {
     sm: {
       width: '780px',
       fields: '20px',
-      offset: '12px'
+      offset: '10px'
     },
     xs: {
       width: '560px',
       fields: '10px',
-      offset: '6px'
+      offset: '5px'
     },
     xxs: {
       width: '200px',
-      fields: '10px',
-      offset: '3px'
+      fields: '0px',
+      offset: '0px'
     }
     /*
     We can create any quantity of break points.
