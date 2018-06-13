@@ -1,4 +1,8 @@
 /*
+.lg-block({
+
+  });
+
   .size-xxs(12);
   .size-xs(12);
   .size-sm(10);
@@ -208,6 +212,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
   background-color: #ff8daf;
@@ -312,15 +317,40 @@ html {
   font-size: 20px;
   color: #ffc4df;
 }
+.intro__header {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .home {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -5px;
-  margin-right: -5px;
   justify-content: center;
-  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
   overflow: hidden;
+}
+.home__intro {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.home__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home__block {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .home__header {
   margin-bottom: 20px;
@@ -328,12 +358,12 @@ html {
   line-height: 30px;
   font-weight: 700;
   color: #c80066;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 5px;
-  margin-right: 5px;
   margin-top: 60px;
-  text-align: center;
+  text-align: left;
+}
+.home__txt {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 200px) {
   .wrapper {
@@ -359,13 +389,26 @@ html {
   .debug > div > div > div {
     width: calc(4.166666666666667% - 0px);
   }
-  .home {
+  .intro__header {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .home__header {
+  .intro__header {
+    display: none;
+  }
+  .home__intro {
     margin-left: 0px;
     margin-right: 0px;
+  }
+  .home__intro {
+    width: calc(91.66666666666667% - 0px);
+  }
+  .home__block {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .home__block {
+    width: calc(91.66666666666667% - 0px);
   }
 }
 @media screen and (min-width: 560px) {
@@ -392,11 +435,15 @@ html {
   .debug > div > div > div {
     width: calc(4.166666666666667% - 5px);
   }
-  .home {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
+  .intro__header {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
   }
-  .home__header {
+  .home__intro {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
+  .home__block {
     margin-left: 2.5px;
     margin-right: 2.5px;
   }
@@ -425,13 +472,81 @@ html {
   .debug > div > div > div {
     width: calc(4.166666666666667% - 10px);
   }
-  .home {
-    margin-left: -5px;
-    margin-right: -5px;
-  }
-  .home__header {
+  .intro__header {
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .home__intro {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .home__block {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .main-nav {
+    flex-direction: row;
+    height: auto;
+    padding: 0;
+    background-color: #ab0157;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+  .main-nav--closed.main-nav {
+    left: 0;
+  }
+  .main-nav__list {
+    flex-direction: row;
+  }
+  .main-nav__item {
+    margin-top: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 21px;
+    text-transform: uppercase;
+  }
+  .main-nav__link--activ {
+    color: #ffc4df;
+  }
+  .main-nav__logo-link {
+    display: none;
+  }
+  .intro {
+    justify-content: center;
+  }
+  .intro__image {
+    width: 650px;
+  }
+  .intro__contacts {
+    display: none;
+  }
+  .intro__header {
+    width: calc(50% - 10px);
+  }
+  .intro__header {
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .home__intro {
+    width: calc(50% - 10px);
+  }
+  .home__intro {
+    display: block;
+    margin-bottom: 50px;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .home__block {
+    width: calc(50% - 10px);
   }
 }
 @media screen and (min-width: 1410px) {
