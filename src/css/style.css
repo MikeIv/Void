@@ -221,14 +221,13 @@ html {
 }
 .main-nav__toggle {
   position: fixed;
-  top: 20px;
+  top: 30px;
   right: 20px;
   display: block;
   width: 35px;
   height: 35px;
   padding: 0;
   border: none;
-  border-color: transparent;
   background-color: transparent;
   cursor: pointer;
   z-index: 20;
@@ -457,6 +456,12 @@ html {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+.footer {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #3d3d3d;
+}
 @media screen and (min-width: 200px) {
   .wrapper {
     padding-left: 0px;
@@ -529,6 +534,9 @@ html {
   }
   .invite__block {
     width: calc(91.66666666666667% - 0px);
+  }
+  .footer {
+    display: none;
   }
 }
 @media screen and (min-width: 560px) {
@@ -725,6 +733,9 @@ html {
   }
   .invite__block {
     width: calc(50% - 10px);
+  }
+  .footer {
+    display: block;
   }
 }
 @media screen and (min-width: 1410px) {
