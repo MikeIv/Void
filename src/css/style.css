@@ -469,6 +469,7 @@ html {
 .footer-cont__block-info {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .footer-cont__txt {
   margin-top: 10px;
@@ -478,7 +479,8 @@ html {
   color: #b8b8b8;
 }
 .footer-cont__nav {
-  margin-right: 200px;
+  margin-right: 120px;
+  margin-bottom: 50px;
 }
 .footer-cont__nav-item {
   margin-bottom: 8px;
@@ -486,6 +488,9 @@ html {
 .footer-cont__nav-link {
   text-decoration: none;
   color: #b8b8b8;
+}
+.footer-cont__adress {
+  margin-right: 120px;
 }
 .footer-cont__adress-item {
   margin-bottom: 8px;
@@ -496,6 +501,42 @@ html {
   font-size: 20px;
   font-weight: 600;
   color: #ffffff;
+}
+.footer-cont__social {
+  margin-right: 80px;
+}
+.footer-cont__social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-cont__social-item {
+  width: 40px;
+  height: auto;
+  margin-right: 15px;
+}
+.footer-cont__social-link {
+  display: block;
+  width: 40px;
+  height: auto;
+}
+.footer-cont__copyright {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.footer-cont__copyright-txt {
+  font-size: 0.8rem;
+  color: #b8b8b8;
+}
+.social-icon__facebook circle {
+  fill: #b8b8b8;
+}
+.social-icon__vk svg {
+  fill: #b8b8b8;
+}
+.social-icon__instagram svg {
+  fill: #b8b8b8;
 }
 @media screen and (min-width: 200px) {
   .wrapper {
