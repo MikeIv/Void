@@ -19,10 +19,16 @@
 .about__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 400px 400px;
+  grid-template-rows: repeat(3, 300px);
+
+
+  .xlg-block({
+    max-width: 1280px;
+    margin: 0 auto;
+  });
 
   .lg-block({
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   });
 
@@ -48,6 +54,34 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+
+.about__block-01 {
+  grid-column: 1;
+}
+
+/*
+.about__block-02 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.about__block-03 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.about__block-04 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.about__block-05 {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+*/
 
 .about__header {
   .header2();
