@@ -7,45 +7,27 @@
   .size-xxs(22);
   .size-lg(12);
 
-  .lg-block({
-    display: block;
-    margin-bottom: 50px;
-    margin-left: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  });
+  .lg-block({ display: block; margin-bottom: 50px; margin-left: auto; padding-left: 10px; padding-right: 10px; });
 }
 
 .about__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 300px);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "block1 block2 block2" "block3 block3 block4" "block5 block5 block6";
 
+  border-radius: 10px;
+  box-shadow: 0 0 10px fade(@black, 20%);
 
-  .xlg-block({
-    max-width: 1280px;
-    margin: 0 auto;
-  });
+  .xlg-block({ max-width: 1280px; margin: 0 auto; margin-bottom: 150px; });
 
-  .lg-block({
-    width: 70%;
-    margin: 0 auto;
-  });
+  .lg-block({ width: 70%; margin: 0 auto; });
 
-  .md-block({
-    width: 70%;
-    margin: 0 auto;
-  });
+  .md-block({ width: 70%; margin: 0 auto; });
 
-  .sm-block({
-    width: 80%;
-    margin: 0 auto;
-  });
+  .sm-block({ width: 80%; margin: 0 auto; });
 
-  .xs-block({
-    width: 90%;
-    margin: 0 auto;
-  });
+  .xs-block({ width: 90%; margin: 0 auto; });
 
 }
 
@@ -55,44 +37,66 @@
   padding-right: 10px;
 }
 
-
 .about__block-01 {
-  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: block1;
+  margin: 0;
+  background-color: @base;
 }
 
-/*
 .about__block-02 {
-  grid-column: 1;
-  grid-row: 2;
+  grid-area: block2;
+  padding: 30px;
 }
 
 .about__block-03 {
-  grid-column: 2;
-  grid-row: 3;
+  grid-area: block3;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/about_background-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about__block-04 {
-  grid-column: 3;
-  grid-row: 4;
+  grid-area: block4;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 22px;
+  background-color: fade(@exlight, 20%);
 }
 
 .about__block-05 {
-  grid-column: 1;
-  grid-row: 5;
+  grid-area: block5;
+  padding: 50px;
 }
 
-*/
+.about__block-06 {
+  grid-area: block6;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/about_background-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .about__header {
   .header2();
 
-  margin-top: 60px;
+  margin-top: 10px;
   text-align: left;
 }
 
 .about__txt {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 
