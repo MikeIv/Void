@@ -2,32 +2,38 @@
   width: 100%;
 }
 
-.about__intro {
-  .col();
-  .size-xxs(22);
-  .size-lg(12);
-
-  .lg-block({ display: block; margin-bottom: 50px; margin-left: auto; padding-left: 10px; padding-right: 10px; });
-}
-
 .about__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "block1 block2 block2" "block3 block3 block4" "block5 block5 block6";
+  grid-template-areas:
+    "block1 block2 block2"
+    "block3 block3 block4"
+    "block5 block5 block6";
 
   border-radius: 10px;
   box-shadow: 0 0 10px fade(@black, 20%);
 
-  .xlg-block({ max-width: 1280px; margin: 0 auto; margin-bottom: 150px; });
+  .xlg-block({
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 150px; });
 
-  .lg-block({ width: 70%; margin: 0 auto; });
+  .lg-block({
+    width: 70%;
+    margin: 0 auto; });
 
-  .md-block({ width: 70%; margin: 0 auto; });
+  .md-block({
+    width: 70%;
+    margin: 0 auto; });
 
-  .sm-block({ width: 80%; margin: 0 auto; });
+  .sm-block({
+    width: 80%;
+    margin: 0 auto; });
 
-  .xs-block({ width: 90%; margin: 0 auto; });
+  .xs-block({
+    width: 90%;
+    margin: 0 auto; });
 
 }
 

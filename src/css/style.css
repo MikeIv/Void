@@ -559,12 +559,6 @@ html {
 .about {
   width: 100%;
 }
-.about__intro {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 5px;
-  margin-right: 5px;
-}
 .about__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -649,7 +643,7 @@ html {
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 1fr;
   grid-template-rows: 300px 250px auto auto auto;
-  grid-template-areas: "block1 block2 block4 block5 block5" "block1 block2 block4 block6 block7" "block1 block3 block4 block6 block7" "block1 block8 block8 block9 block9";
+  grid-template-areas: "block1 block2 block4 block5 block5" "block1 block2 block4 block6 block7" "block1 block3 block10 block6 block7" "block1 block8 block8 block9 block9";
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -667,6 +661,9 @@ html {
 }
 .production__block-02 {
   grid-area: block2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   background-image: url("../img/prod_block-img-01.jpg");
   background-position: center;
@@ -679,15 +676,19 @@ html {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #c80066;
 }
 .production__block-04 {
   grid-area: block4;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   margin: 0;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: #ff8daf;
 }
 .production__block-05 {
@@ -709,7 +710,7 @@ html {
 .production__block-07 {
   grid-area: block7;
   margin: 0;
-  background-image: url("../img/prod_block-img-01.jpg");
+  background-image: url("../img/prod_block-img-02.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -728,14 +729,72 @@ html {
   padding: 50px;
   background-color: #ff8daf;
 }
-.production__header {
-  margin-bottom: 20px;
-  font-size: 38px;
-  line-height: 36px;
-  font-weight: 500;
+.production__block-10 {
+  grid-area: block10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: url("../img/prod_block-img-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ffc4df;
+}
+.production__link {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  text-shadow: 0px 1px 3px #3d3d3d;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.production__link:before,
+.production__link:after {
+  position: absolute;
+  content: ' ';
+  top: 25px;
+  left: 240px;
+  width: 20px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.production__link:before {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+.production__link:after {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+.production__link--pink {
   color: #c80066;
-  margin-top: 10px;
+  border: 2px solid #c80066;
+  text-shadow: none;
+}
+.production__link--pink:before,
+.production__link--pink:after {
+  background-color: #c80066;
+}
+.production__header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 58px;
+  font-weight: 700;
   text-align: left;
+  text-transform: uppercase;
   color: #ffffff;
 }
 .production__txt {
@@ -819,13 +878,6 @@ html {
   .footer {
     display: none;
   }
-  .about__intro {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .about__intro {
-    width: calc(91.66666666666667% - 0px);
-  }
   .production__intro {
     margin-left: 0px;
     margin-right: 0px;
@@ -883,10 +935,6 @@ html {
     margin-right: 2.5px;
   }
   .invite__block {
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-  }
-  .about__intro {
     margin-left: 2.5px;
     margin-right: 2.5px;
   }
@@ -948,10 +996,6 @@ html {
     margin-right: 5px;
   }
   .invite__block {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .about__intro {
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -1061,16 +1105,6 @@ html {
   }
   .footer {
     display: block;
-  }
-  .about__intro {
-    width: calc(50% - 10px);
-  }
-  .about__intro {
-    display: block;
-    margin-bottom: 50px;
-    margin-left: auto;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .about__items {
     width: 70%;

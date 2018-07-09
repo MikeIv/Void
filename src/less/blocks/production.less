@@ -18,7 +18,7 @@
   grid-template-areas:
     "block1 block2 block4 block5 block5"
     "block1 block2 block4 block6 block7"
-    "block1 block3 block4 block6 block7"
+    "block1 block3 block10 block6 block7"
     "block1 block8 block8 block9 block9";
 
   width: 100%;
@@ -43,6 +43,9 @@
 
 .production__block-02 {
   grid-area: block2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   background-image: url("../img/prod_block-img-01.jpg");
   background-position: center;
@@ -56,16 +59,20 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: @base;
 }
 
 .production__block-04 {
   grid-area: block4;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   margin: 0;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: @light;
 }
 
@@ -90,7 +97,7 @@
 .production__block-07 {
   grid-area: block7;
   margin: 0;
-  background-image: url("../img/prod_block-img-01.jpg");
+  background-image: url("../img/prod_block-img-02.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,13 +119,78 @@
   background-color: @light;
 }
 
+.production__block-10 {
+  grid-area: block10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: url("../img/prod_block-img-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @exlight;
+}
+
+.production__link {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @white;
+  border: 2px solid @white;
+  border-radius: 4px;
+  text-shadow: 0px 1px 3px @darkgray;
+  background-color: fade(@white, 60%);
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: ' ';
+    top: 25px;
+    left: 240px;
+    width: 20px;
+    height: 2px;
+    background-color: @white;
+  }
+
+  &:before {
+    transform: rotate(25deg);
+    transform-origin: right;
+  }
+
+  &:after {
+    transform: rotate(-25deg);
+    transform-origin: right;
+  }
+
+  &--pink {
+    color: @base;
+    border: 2px solid @base;
+    text-shadow: none;
+  }
+
+  &--pink:before,
+  &--pink:after {
+    background-color: @base;
+  }
+
+}
+
 
 
 .production__header {
-  .header2();
-
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 58px;
+  font-weight: 700;
   text-align: left;
+  text-transform: uppercase;
   color: @white;
 }
 
