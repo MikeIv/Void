@@ -1,0 +1,124 @@
+.manufacture {
+  width: 100%;
+}
+
+.manufacture__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "block1 block1 block2"
+    "block3 block3 block4"
+    "block5 block5 block4"
+    "block6 block6 block6";
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px fade(@black, 20%);
+
+  .xlg-block({
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 150px; });
+
+  .lg-block({
+    width: 70%;
+    margin: 0 auto; });
+
+  .md-block({
+    width: 70%;
+    margin: 0 auto; });
+
+  .sm-block({
+    width: 80%;
+    margin: 0 auto; });
+
+  .xs-block({
+    width: 90%;
+    margin: 0 auto; });
+
+}
+
+.manufacture__block {
+  margin-bottom: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.manufacture__block-01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: block1;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: fade(@exlight, 20%);
+}
+
+.manufacture__block-02 {
+  grid-area: block2;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/manufacture_background-01.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.manufacture__block-03 {
+  grid-area: block3;
+  display: flex;
+  height: 480px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/manufacture_background-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.manufacture__block-04 {
+  grid-area: block4;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 22px;
+  background-color: @white;
+}
+
+.manufacture__block-05 {
+  grid-area: block5;
+  margin: 0;
+  padding: 60px;
+  background-color: fade(@exlight, 20%);
+}
+
+.manufacture__block-06 {
+  grid-area: block6;
+  display: flex;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/manufacture_background-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.manufacture__header {
+  .header2();
+
+  margin-top: 10px;
+  text-align: left;
+}
+
+.manufacture__txt {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
