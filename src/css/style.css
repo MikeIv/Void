@@ -204,6 +204,9 @@ html {
   font-weight: bold;
   font-style: normal;
 }
+.main-header {
+  width: 100%;
+}
 .main-nav {
   position: fixed;
   top: 0;
@@ -289,6 +292,10 @@ html {
   line-height: 34px;
   color: #ffffff;
 }
+.main-nav__link:hover {
+  color: #b8b8b8;
+  transition: 0.7s;
+}
 .main-nav__logo-link {
   margin-top: 120px;
   margin-bottom: 30px;
@@ -305,10 +312,20 @@ html {
   height: 100vh;
   background-color: #c80066;
 }
+.intro__logo-link:hover {
+  opacity: 0.5;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  transition: 1s;
+}
 .intro__image {
   margin-top: 100px;
   width: 235px;
-  opacity: 0.6;
+  opacity: 0.5;
+}
+.intro__image:hover {
+  opacity: 1;
+  transition: 1.3s;
 }
 .intro__contacts {
   margin-top: 100px;
@@ -1121,6 +1138,9 @@ html {
     padding: 0;
     background-color: #ab0157;
   }
+  .main-nav:hover {
+    background-color: #c80066;
+  }
   .main-nav__toggle {
     display: none;
   }
@@ -1139,6 +1159,10 @@ html {
   }
   .main-nav__link--activ {
     color: #ffc4df;
+  }
+  .main-nav__link--activ:hover {
+    color: #dedede;
+    transition: 1s;
   }
   .main-nav__logo-link {
     display: none;
@@ -1163,6 +1187,10 @@ html {
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
+  }
+  .intro__header:hover {
+    color: #ff8daf;
+    transition: 1s;
   }
   .home__intro {
     width: calc(50% - 10px);

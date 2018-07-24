@@ -12,10 +12,21 @@
   });
 }
 
+.intro__logo-link:hover {
+  opacity: 0.5;
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
 .intro__image {
   margin-top: 100px;
   width: 235px;
-  opacity: 0.6;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+    transition: 1.3s;
+  }
 
   .lg-block({
     width: 650px;
@@ -49,6 +60,11 @@
     font-weight: 300;
     color: @white;
     text-transform: uppercase;
+
+  &:hover {
+    color: @light;
+    transition: 1s;
+  }
 
   });
 }

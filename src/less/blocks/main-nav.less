@@ -18,6 +18,10 @@
     height: auto;
     padding: 0;
     background-color: @dark;
+
+    &:hover {
+      background-color: @base;
+    }
   });
 }
 
@@ -125,9 +129,21 @@ left: 0;
   line-height: 34px;
   color: @white;
 
+  &:hover {
+    color: @lightgray;
+    transition: 0.7s;
+  }
+
   &--activ {
     .lg-block({
       color: @exlight;
+    });
+  }
+
+  &--activ:hover {
+    .lg-block({
+      color: @exlightgray;
+      transition: 1s;
     });
   }
 }
