@@ -354,6 +354,10 @@ html {
   margin-bottom: 50px;
   max-width: 1000px;
   overflow: hidden;
+  transition: 1s;
+}
+.home:hover {
+  background-color: rgba(255, 196, 223, 0.1);
 }
 .home__intro {
   box-sizing: border-box;
@@ -432,6 +436,10 @@ html {
   margin-bottom: 30px;
 }
 .image-block {
+  width: 100%;
+  height: auto;
+}
+.image-block__slide {
   position: relative;
   display: flex;
   width: 100%;
@@ -1143,6 +1151,10 @@ html {
     height: auto;
     padding: 0;
     background-color: #ab0157;
+  }
+  .main-nav--inner {
+    background-color: #696969;
+    transition: 0.7s;
   }
   .main-nav:hover {
     background-color: #c80066;
