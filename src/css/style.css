@@ -311,6 +311,11 @@ html {
   width: 100%;
   height: 100vh;
   background-color: #c80066;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+.intro__logo-link {
+  transition: 1s;
 }
 .intro__logo-link:hover {
   opacity: 0.5;
@@ -322,6 +327,7 @@ html {
   margin-top: 100px;
   width: 235px;
   opacity: 0.5;
+  transition: 1.3s;
 }
 .intro__image:hover {
   opacity: 1;
@@ -1140,6 +1146,7 @@ html {
   }
   .main-nav:hover {
     background-color: #c80066;
+    transition: 0.7s;
   }
   .main-nav__toggle {
     display: none;
@@ -1187,6 +1194,7 @@ html {
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
+    transition: 1s;
   }
   .intro__header:hover {
     color: #ff8daf;
