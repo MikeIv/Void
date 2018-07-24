@@ -50,11 +50,23 @@
   grid-area: block1;
   margin: 0;
   background-color: @base;
+  transition: 1s;
+
+  &:hover {
+    background-color: @dark;
+    transition: 1s;
+  }
 }
 
 .about__block-02 {
   grid-area: block2;
   padding: 30px;
+  transition: 1.5s;
+
+  &:hover {
+    background-color: fade(@exlight, 50%);
+    transition: 1.5s;
+  }
 }
 
 .about__block-03 {
@@ -91,6 +103,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.about__logo-link {
+  transition: 1s;
+
+  &:hover {
+    opacity: 0.5;
+    transform: rotateY(180deg);
+    transition: 1s;
+  }
+
 }
 
 .about__header {
