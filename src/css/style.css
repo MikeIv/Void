@@ -845,7 +845,20 @@ html {
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
+  transition: 1s;
+}
+.production__header:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.production__header-link {
+  text-decoration: none;
   color: #ffffff;
+  transition: 1s;
+}
+.production__header-link:hover {
+  color: #ffc4df;
+  transition: 1s;
 }
 .production__txt {
   margin-top: 10px;
