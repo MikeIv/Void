@@ -515,6 +515,21 @@ html {
   margin-bottom: 30px;
   border-bottom: 1px solid #b8b8b8;
 }
+.footer-cont__logo-link {
+  transition: 1s;
+}
+.footer-cont__logo-link:hover {
+  opacity: 0.5;
+  transition: 1s;
+}
+.footer-cont__logo {
+  transition: 1s;
+}
+.footer-cont__logo:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  transition: 1s;
+}
 .footer-cont__block-info {
   display: flex;
   justify-content: flex-start;
