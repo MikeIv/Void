@@ -14,7 +14,7 @@
 .production__items {
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 250px auto auto auto;
+  grid-template-rows: 400px 300px auto auto auto;
   grid-template-areas:
     "block1 block2 block4 block5 block5"
     "block1 block2 block4 block6 block7"
@@ -152,6 +152,7 @@
   border-radius: 4px;
   text-shadow: 0px 1px 3px @darkgray;
   background-color: fade(@white, 60%);
+  transition: 0.8s;
 
   &:before,
   &:after {
@@ -174,6 +175,13 @@
     transform-origin: right;
   }
 
+  &:hover {
+    color: @light;
+    border: 2px solid @light;
+    text-shadow: none;
+    transition: 0.8s;
+  }
+
   &--pink {
     color: @base;
     border: 2px solid @base;
@@ -184,6 +192,7 @@
     color: @light;
     border: 2px solid @light;
     text-shadow: none;
+    transition: 0.8s;
   }
 
   &--pink:before,
