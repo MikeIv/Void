@@ -777,6 +777,8 @@ html {
 .production__block-07 {
   grid-area: block7;
   margin: 0;
+  border-top: 4px solid #ab0157;
+  border-bottom: 4px solid #ab0157;
   background-image: url("../img/prod_block-img-02.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -805,6 +807,7 @@ html {
   margin: 0;
   border-left: 4px solid #ff8daf;
   border-right: 4px solid #ff8daf;
+  border-bottom: 4px solid #ff8daf;
   background-image: url("../img/prod_block-img-03.jpg");
   background-position: center;
   background-repeat: no-repeat;
