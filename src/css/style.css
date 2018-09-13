@@ -541,6 +541,11 @@ html {
   font-size: 26px;
   font-weight: 300;
   color: #b8b8b8;
+  transition: 1s;
+}
+.footer-cont__txt:hover {
+  color: #ffffff;
+  transition: 1s;
 }
 .footer-cont__nav {
   margin-right: 120px;
@@ -552,6 +557,10 @@ html {
 .footer-cont__nav-link {
   text-decoration: none;
   color: #b8b8b8;
+}
+.footer-cont__nav-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 .footer-cont__adress {
   margin-right: 120px;
