@@ -542,6 +542,17 @@ html {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+.invite__txt-list {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 24px;
+  color: #696969;
+  margin-bottom: 20px;
+}
 .footer {
   width: 100%;
   padding-top: 100px;
