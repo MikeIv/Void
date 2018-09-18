@@ -30,3 +30,21 @@
 .image-block__pict-02 {
   z-index: 5;
 }
+
+.image-block__full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: 1s;
+
+    &:hover {
+      opacity: 0.5;
+      transition: 1s;
+    }
+  }
+
+}

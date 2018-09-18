@@ -1,6 +1,7 @@
 .invite {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -8,6 +9,31 @@
   max-width: 800px;
   overflow: hidden;
 
+}
+
+.invite__link {
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: @white;
+  background-color: @base;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: @light;
+    transition: 0.5s;
+  }
+
+  &:active {
+    background-color: @dark;
+  }
 }
 
 .invite__intro {
@@ -24,21 +50,6 @@
   });
 }
 
-.invite__items {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.invite__block {
-  .col();
-  .size-xxs(22);
-  .size-lg(12);
-
-  margin-bottom: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 .invite__header {
   .header();
