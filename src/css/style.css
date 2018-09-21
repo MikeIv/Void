@@ -1218,6 +1218,15 @@ html {
     width: 100%;
     margin: 0 auto;
   }
+  .about__block-02 {
+    padding: 20px;
+  }
+  .about__block-04 {
+    padding: 20px;
+  }
+  .about__block-05 {
+    padding: 20px;
+  }
   .production__intro {
     margin-left: 0px;
     margin-right: 0px;
@@ -1287,6 +1296,15 @@ html {
     grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6";
     width: 90%;
     margin: 0 auto;
+  }
+  .about__block-02 {
+    padding: 40px;
+  }
+  .about__block-04 {
+    padding: 40px;
+  }
+  .about__block-05 {
+    padding: 40px;
   }
   .production__intro {
     margin-left: 2.5px;

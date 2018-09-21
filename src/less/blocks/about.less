@@ -24,11 +24,13 @@
 
   .lg-block({
     width: 85%;
-    margin: 0 auto; });
+    margin: 0 auto;
+  });
 
   .md-block({
     width: 90%;
-    margin: 0 auto; });
+    margin: 0 auto;
+  });
 
   .sm-block({
     grid-template-columns: 1fr 1fr 1fr;
@@ -105,6 +107,14 @@
     background-color: fade(@exlight, 50%);
     transition: 1.5s;
   }
+
+  .xs-block({
+    padding: 40px;
+  });
+
+  .xxs-block({
+    padding: 20px;
+  });
 }
 
 .about__block-03 {
@@ -125,11 +135,27 @@
   margin: 0;
   padding: 40px;
   background-color: fade(@exlight, 20%);
+
+  .xs-block({
+    padding: 40px;
+  });
+
+  .xxs-block({
+    padding: 20px;
+  });
 }
 
 .about__block-05 {
   grid-area: block5;
   padding: 70px;
+
+  .xs-block({
+    padding: 40px;
+  });
+
+  .xxs-block({
+    padding: 20px;
+  });
 }
 
 .about__block-06 {
