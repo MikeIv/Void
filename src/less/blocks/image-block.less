@@ -2,14 +2,20 @@
   width: 100%;
   height: auto;
 
-  .xxs-block({
+  .xs-block({
+  display: block;
     margin-bottom: 70px;
+  });
+
+  .xxs-block({
+    display: none;
   });
 }
 
 .image-block__slide {
   position: relative;
   display: flex;
+  align-items: center;
   width: 100%;
 
   .xlg-block({
@@ -23,6 +29,15 @@
   .md-block({
     height: 400px;
   });
+
+  .sm-block({
+    height: 350px;
+  });
+
+  .xs-block({
+    height: 300px;
+  });
+
 }
 
 .image-block__pict {

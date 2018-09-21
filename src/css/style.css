@@ -508,6 +508,7 @@ html {
 .image-block__slide {
   position: relative;
   display: flex;
+  align-items: center;
   width: 100%;
 }
 .image-block__pict {
@@ -743,9 +744,6 @@ html {
 }
 .about__items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "block1 block2 block2" "block3 block3 block4" "block5 block5 block6";
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -1195,7 +1193,7 @@ html {
     width: calc(91.66666666666667% - 0px);
   }
   .image-block {
-    margin-bottom: 70px;
+    display: none;
   }
   .invite {
     flex-direction: column-reverse;
@@ -1212,6 +1210,13 @@ html {
   }
   .footer {
     display: none;
+  }
+  .about__items {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 250px auto 400px auto auto 400px;
+    grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6";
+    width: 100%;
+    margin: 0 auto;
   }
   .production__intro {
     margin-left: 0px;
@@ -1265,11 +1270,21 @@ html {
     margin-left: 2.5px;
     margin-right: 2.5px;
   }
+  .image-block {
+    display: block;
+    margin-bottom: 70px;
+  }
+  .image-block__slide {
+    height: 300px;
+  }
   .invite__intro {
     margin-left: 2.5px;
     margin-right: 2.5px;
   }
   .about__items {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 250px auto 400px auto auto 400px;
+    grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6";
     width: 90%;
     margin: 0 auto;
   }
@@ -1326,12 +1341,18 @@ html {
     margin-left: 5px;
     margin-right: 5px;
   }
+  .image-block__slide {
+    height: 350px;
+  }
   .invite__intro {
     margin-left: 5px;
     margin-right: 5px;
   }
   .about__items {
-    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "block1 block2 block2" "block3 block3 block4" "block5 block5 block6";
+    width: 95%;
     margin: 0 auto;
   }
   .production__intro {
@@ -1348,7 +1369,7 @@ html {
     height: 400px;
   }
   .about__items {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .manufacture__items {
@@ -1473,7 +1494,7 @@ html {
     margin-top: 50px;
   }
   .about__items {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
   }
   .production__intro {
