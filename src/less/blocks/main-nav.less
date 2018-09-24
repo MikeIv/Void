@@ -13,6 +13,7 @@
   z-index: 50;
   transition: 0.7s;
 
+
   .lg-block({
     flex-direction: row;
     height: auto;
@@ -117,7 +118,39 @@ left: 0;
 }
 
 .main-nav__item {
+  position: relative;
   margin-bottom: 18px;
+
+  &--list {
+    ul {
+      transition: 0.3s;
+      transform-origin: top;
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+
+  &--list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    width: 200px;
+    height: 45px;
+  }
+
+    &--list:hover {
+
+      ul {
+        display: block;
+        transition: 0.3s;
+        transform: scale(1);
+        opacity: 1;
+      }
+
+    }
+
 
   .lg-block({
     margin-top: 18px;
