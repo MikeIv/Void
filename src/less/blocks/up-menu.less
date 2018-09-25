@@ -11,6 +11,21 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   box-shadow: 0 10px 10px 5px @dark;
+  z-index: 10;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 50px;
+    height: 25px;
+    margin-left: -25px;
+    background-image: url(../img/up-menu_poligon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+  }
 }
 
 .up-menu__item {
@@ -30,4 +45,8 @@
   text-decoration: none;
   text-transform: none;
   color: @white;
+
+  &:hover {
+    color: @light;
+  }
 }

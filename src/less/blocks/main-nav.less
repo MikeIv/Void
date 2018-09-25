@@ -105,11 +105,13 @@ left: 0;
 // end of toggle
 
 .main-nav__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: auto;
+  z-index: 55;
 
   .lg-block({
     flex-direction: row;
@@ -122,11 +124,11 @@ left: 0;
   margin-bottom: 18px;
 
   &--list {
+
     ul {
       transition: 0.3s;
       transform-origin: top;
       transform: scale(0);
-      opacity: 0;
     }
   }
 
