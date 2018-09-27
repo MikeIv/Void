@@ -7,6 +7,7 @@
 @break_md: 960px;
 @break_lg: 1100px;
 @break_xlg: 1410px;
+@break_xxlg: 1920px;
 
 @offset: 10px;
 @offset_xxs: 0px;
@@ -15,6 +16,7 @@
 @offset_md: @offset_sm;
 @offset_lg: @offset_sm;
 @offset_xlg: @offset_sm;
+@offset_xxlg: @offset_sm;
 
 @offset_one_side: (@offset / 2);
 @offset_xxs_one_side: (@offset_xxs / 2);
@@ -23,12 +25,14 @@
 @offset_md_one_side: (@offset_md / 2);
 @offset_lg_one_side: (@offset_lg / 2);
 @offset_xlg_one_side: (@offset_xlg / 2);
+@offset_xxlg_one_side: (@offset_xxlg / 2);
 
 @fields: 30px;
 @fields_xxs: 0px;
 @fields_xs: 10px;
 @fields_sm: 20px;
 @fields_xlg: 30px;
+@fields_xxlg: 30px;
 
 .wrapper-full(){
     padding-left: @fields;
@@ -52,6 +56,11 @@
     .xlg-block({
         padding-left: @fields_xlg;
         padding-right: @fields_xlg;
+    });
+
+    .xxlg-block({
+        padding-left: @fields_xxlg;
+        padding-right: @fields_xxlg;
     });
 }
 
@@ -169,6 +178,11 @@
 .size-xlg(@n){
     @val: 100% / @columns * @n;
     .xlg(width, ~"calc(@{val} - @{offset_xlg})");
+}
+
+.size-xxlg(@n){
+    @val: 100% / @columns * @n;
+    .xxlg(width, ~"calc(@{val} - @{offset_xxlg})");
 }
 
 .shift(@n){
@@ -395,6 +409,38 @@
     .xlg(padding-right, ~"calc(@{val} + @{offset_xlg_one_side})");
 }
 
+.shift-xxlg(@n){
+    @val: 100% / @columns * @n;
+    .xxlg(margin-left, ~"calc(@{val} + @{offset_xxlg_one_side})");
+    .xxlg(margin-right, ~"calc(@{val} + @{offset_xxlg_one_side})");
+}
+
+.shift-xxlg-left(@n){
+    @val: 100% / @columns * @n;
+    .xxlg(margin-left, ~"calc(@{val} + @{offset_xxlg_one_side})");
+}
+
+.shift-xxlg-right(@n){
+    @val: 100% / @columns * @n;
+    .xxlg(margin-right, ~"calc(@{val} + @{offset_xxlg_one_side})");
+}
+
+.shift-xxlg-padding(@n){
+    @val: 100% / @columns * @n;
+    .xxlg(padding-left, ~"calc(@{val} + @{offset_xxlg_one_side})");
+    .xxlg(padding-right, ~"calc(@{val} + @{offset_xxlg_one_side})");
+}
+
+.shift-xxlg-padding-left(@n){
+    @val: 100% / @columns * @n;
+    .xxlg(padding-left, ~"calc(@{val} + @{offset_xxlg_one_side})");
+}
+
+.shift-xxlg-padding-right(@n){
+    @val: 100% / @columns * @n;
+    .xxlg(padding-right, ~"calc(@{val} + @{offset_xxlg_one_side})");
+}
+
 .xxs(@name, @value){
     @media screen and (min-width: @break_xxs){
         @{name}: @value;
@@ -463,6 +509,18 @@
 
 .xlg-block(@content){
     @media screen and (min-width: @break_xlg){
+        @content();
+    }
+}
+
+.xxlg(@name, @value){
+    @media screen and (min-width: @break_xxlg){
+        @{name}: @value;
+    }
+}
+
+.xxlg-block(@content){
+    @media screen and (min-width: @break_xxlg){
         @content();
     }
 }
