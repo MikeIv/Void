@@ -54,7 +54,7 @@
 
   .md-block({
     grid-template-columns: 1fr;
-    grid-template-rows: 400px auto auto 400px auto;
+    grid-template-rows: 400px auto auto auto auto auto auto auto 400px;
     grid-template-areas:
       "block2"
       "block3"
@@ -69,7 +69,7 @@
 
   .xxs-block({
     grid-template-columns: 1fr;
-    grid-template-rows: 400px auto auto 400px auto;
+    grid-template-rows: 400px auto auto auto auto auto auto auto 400px;
     grid-template-areas:
       "block2"
       "block3"
@@ -93,7 +93,7 @@
 .production__block-01 {
   grid-area: block1;
   margin: 0;
-  background-color: @light;
+
 
   .xxlg-block({
     padding: 10px;
@@ -101,6 +101,7 @@
 
   .xlg-block({
     padding: 0;
+    background-color: @light;
   });
 
   .lg-block({
@@ -272,7 +273,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  background-color: @exlight ;
+
 
   .xxlg-block({
     flex-direction: row;
@@ -289,6 +290,7 @@
   .xlg-block({
     justify-content: space-around;
     padding: 35px;
+    background-color: @exlight ;
   });
 
   .lg-block({
@@ -304,7 +306,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  background-color: @light;
+
 
   .xxlg-block({
     flex-direction: row;
@@ -316,12 +318,14 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
+
   });
 
   .xlg-block({
     flex-direction: column;
     justify-content: space-around;
     padding: 35px;
+    background-color: @light;
   });
 
   .lg-block({
@@ -449,11 +453,11 @@
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.3s;
 
   &:hover {
-    transform: scale(1.04, 1.04);
-    transition: 0.5s;
+    transform: scale(1.02, 1.02);
+    transition: 0.3s;
   }
 
   .xxlg-block({
@@ -465,7 +469,11 @@
   });
 
   .lg-block({
-    font-size: 32px;
+  font-size: 32px;
+});
+
+  .xxs-block({
+    font-size: 28px;
   });
 
 }
@@ -473,7 +481,7 @@
 .production__header-link {
   text-decoration: none;
   color: @white;
-  transition: 1s;
+  transition: 0.5s;
 
   &--pink {
     color: @base;
@@ -481,7 +489,7 @@
 
   &:hover {
     color: @exlight;
-    transition: 1s;
+    transition: 0.5s;
   }
 
   &--pink:hover {

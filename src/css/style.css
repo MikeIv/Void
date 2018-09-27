@@ -873,7 +873,6 @@ html {
 .production__block-01 {
   grid-area: block1;
   margin: 0;
-  background-color: #ff8daf;
 }
 .production__block-02 {
   grid-area: block2;
@@ -940,7 +939,6 @@ html {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  background-color: #ffc4df;
 }
 .production__block-09 {
   grid-area: block9;
@@ -948,7 +946,6 @@ html {
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  background-color: #ff8daf;
 }
 .production__block-10 {
   grid-area: block10;
@@ -1039,24 +1036,24 @@ html {
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .production__header:hover {
-  -webkit-transform: scale(1.04, 1.04);
-          transform: scale(1.04, 1.04);
-  transition: 0.5s;
+  -webkit-transform: scale(1.02, 1.02);
+          transform: scale(1.02, 1.02);
+  transition: 0.3s;
 }
 .production__header-link {
   text-decoration: none;
   color: #ffffff;
-  transition: 1s;
+  transition: 0.5s;
 }
 .production__header-link--pink {
   color: #c80066;
 }
 .production__header-link:hover {
   color: #ffc4df;
-  transition: 1s;
+  transition: 0.5s;
 }
 .production__header-link--pink:hover {
   color: #ffffff;
@@ -1314,8 +1311,11 @@ html {
   }
   .production__items {
     grid-template-columns: 1fr;
-    grid-template-rows: 400px auto auto 400px auto;
+    grid-template-rows: 400px auto auto auto auto auto auto auto 400px;
     grid-template-areas: "block2" "block3" "block4" "block5" "block6" "block7" "block8" "block9" "block10";
+  }
+  .production__header {
+    font-size: 28px;
   }
 }
 @media screen and (min-width: 560px) {
@@ -1482,7 +1482,7 @@ html {
   }
   .production__items {
     grid-template-columns: 1fr;
-    grid-template-rows: 400px auto auto 400px auto;
+    grid-template-rows: 400px auto auto auto auto auto auto auto 400px;
     grid-template-areas: "block2" "block3" "block4" "block5" "block6" "block7" "block8" "block9" "block10";
   }
   .manufacture__items {
@@ -1707,6 +1707,7 @@ html {
   }
   .production__block-01 {
     padding: 0;
+    background-color: #ff8daf;
   }
   .production__block-02 {
     border-left: 4px solid #c80066;
@@ -1731,11 +1732,13 @@ html {
   .production__block-08 {
     justify-content: space-around;
     padding: 35px;
+    background-color: #ffc4df;
   }
   .production__block-09 {
     flex-direction: column;
     justify-content: space-around;
     padding: 35px;
+    background-color: #ff8daf;
   }
   .production__block-10 {
     border-left: 4px solid #ff8daf;
