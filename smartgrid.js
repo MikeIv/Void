@@ -15,6 +15,10 @@ var settings = {
       width: '1920px',
       fields: '30px'/* -> @media (max-width: 1100px) */
     },
+    xmlg: {
+      width: '1800px',
+      fields: '30px'/* -> @media (max-width: 1100px) */
+    },
     xlg: {
       width: '1410px',
       fields: '30px'/* -> @media (max-width: 1100px) */
