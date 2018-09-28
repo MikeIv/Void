@@ -19,13 +19,13 @@
 .production__items {
   display: grid;
   grid-template-columns: 50px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 400px 300px auto auto auto;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 10px fade(@black, 20%);
 
 
   .xxlg-block({
+    grid-template-rows: 400px 300px auto auto auto;
     grid-template-areas:
       "block1 block2 block4 block5 block5"
       "block1 block2 block4 block6 block7"
@@ -41,7 +41,7 @@
       "block1 block8 block8 block9 block9";
   });
 
-  .lg-block({
+  .md-block({
     grid-template-columns: 30px 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px auto auto 400px auto;
     grid-template-areas:
@@ -52,7 +52,7 @@
       "block1 block8 block8 block9 block9";
   });
 
-  .md-block({
+  .sm-block({
     grid-template-columns: 1fr;
     grid-template-rows: 400px auto auto auto auto auto auto auto 400px;
     grid-template-areas:
@@ -104,7 +104,7 @@
     background-color: @light;
   });
 
-  .lg-block({
+  .md-block({
     background-color: @exlight;
   });
 }
@@ -133,7 +133,7 @@
   });
 
 
-  .lg-block({
+  .md-block({
     border-left: none;
     border-right: none;
   });
@@ -155,7 +155,7 @@
     background-color: @base;
   });
 
-  .lg-block({
+  .md-block({
     justify-content: center;
     padding: 25px;
     background-color: @light;
@@ -179,7 +179,7 @@
     background-color: @light;
   });
 
-  .lg-block({
+  .md-block({
     justify-content: center;
     padding: 25px;
     background-color: @base;
@@ -208,7 +208,7 @@
     padding: 30px;
   });
 
-  .lg-block({
+  .md-block({
     justify-content: center;
     padding: 25px;
   });
@@ -244,7 +244,7 @@
     padding: 30px;
   });
 
-  .lg-block({
+  .md-block({
     justify-content: space-around;
     padding: 25px;
   });
@@ -261,7 +261,7 @@
   background-size: cover;
   background-color: @exlight;
 
-  .lg-block({
+  .md-block({
     border-top: none;
     border-bottom: none;
   });
@@ -293,7 +293,7 @@
     background-color: @exlight ;
   });
 
-  .lg-block({
+  .md-block({
     justify-content: space-around;
     padding: 25px;
     background-color: @light ;
@@ -328,7 +328,7 @@
     background-color: @light;
   });
 
-  .lg-block({
+  .md-block({
     flex-direction: column;
     justify-content: space-around;
     padding: 25px;
@@ -360,7 +360,7 @@
     border-bottom: 4px solid @light;
   });
 
-  .lg-block({
+  .md-block({
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -468,7 +468,7 @@
     font-size: 40px;
   });
 
-  .lg-block({
+  .md-block({
   font-size: 32px;
 });
 
@@ -481,6 +481,7 @@
 .production__header-link {
   text-decoration: none;
   color: @white;
+  border-bottom: 1px solid @white;
   transition: 0.5s;
 
   &--pink {
