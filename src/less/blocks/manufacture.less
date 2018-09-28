@@ -1,16 +1,26 @@
 .manufacture {
   width: 100%;
+
+  .xlg-block({
+    margin-top: 90px;
+  });
+
+  .lg-block({
+    margin-top: 50px;
+  });
 }
+
+/*grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto auto;
+grid-template-areas:
+"block1 block1 block2"
+"block3 block3 block4"
+"block5 block5 block4"
+"block6 block6 block6";*/
 
 .manufacture__items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "block1 block1 block2"
-    "block3 block3 block4"
-    "block5 block5 block4"
-    "block6 block6 block6";
+
 
   border-radius: 10px;
   box-shadow: 0 0 10px fade(@black, 20%);
@@ -21,21 +31,54 @@
     margin-bottom: 150px; });
 
   .lg-block({
-    width: 70%;
-    margin: 0 auto; });
+    width: 85%;
+    margin: 0 auto;
+  });
 
   .md-block({
-    width: 70%;
-    margin: 0 auto; });
+    width: 90%;
+    margin: 0 auto;
+  });
 
   .sm-block({
-    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "block1 block1 block2"
+      "block3 block3 block4"
+      "block5 block5 block4"
+      "block6 block6 block6";
+
+    width: 95%;
     margin: 0 auto; });
 
   .xs-block({
+    grid-template-columns: 1fr ;
+    grid-template-rows: 250px auto 400px auto auto 400px;
+    grid-template-areas:
+      "block1"
+      "block2"
+      "block3"
+      "block4"
+      "block5"
+      "block6";
+
     width: 90%;
     margin: 0 auto; });
 
+  .xxs-block({
+    grid-template-columns: 1fr ;
+    grid-template-rows: 250px auto 400px auto auto 400px;
+    grid-template-areas:
+      "block1"
+      "block2"
+      "block3"
+      "block4"
+      "block5"
+      "block6";
+
+    width: 100%;
+    margin: 0 auto; });
 }
 
 .manufacture__block {
@@ -117,8 +160,19 @@
 }
 
 .manufacture__txt {
+  .txt();
+
   margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
+.manufacture__txt-list {
+  .txt-list();
   margin-bottom: 20px;
 }
 
+.manufacture__txt-item {
+  margin-bottom: 12px;
+}
 

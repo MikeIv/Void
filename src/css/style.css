@@ -1080,11 +1080,15 @@ html {
 .manufacture {
   width: 100%;
 }
+/*grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto auto auto auto;
+grid-template-areas:
+"block1 block1 block2"
+"block3 block3 block4"
+"block5 block5 block4"
+"block6 block6 block6";*/
 .manufacture__items {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "block1 block1 block2" "block3 block3 block4" "block5 block5 block4" "block6 block6 block6";
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -1162,8 +1166,27 @@ html {
   text-align: left;
 }
 .manufacture__txt {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3d3d3d;
   margin-top: 10px;
+  margin-bottom: 30px;
+}
+.manufacture__txt-list {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 26px;
+  color: #696969;
   margin-bottom: 20px;
+}
+.manufacture__txt-item {
+  margin-bottom: 12px;
 }
 .up-menu {
   position: absolute;
@@ -1354,6 +1377,13 @@ html {
   .production__header {
     font-size: 28px;
   }
+  .manufacture__items {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 250px auto 400px auto auto 400px;
+    grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6";
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 560px) {
   .wrapper {
@@ -1431,6 +1461,9 @@ html {
     margin-right: 2.5px;
   }
   .manufacture__items {
+    grid-template-columns: 1fr ;
+    grid-template-rows: 250px auto 400px auto auto 400px;
+    grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6";
     width: 90%;
     margin: 0 auto;
   }
@@ -1498,7 +1531,10 @@ html {
     margin-right: 5px;
   }
   .manufacture__items {
-    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "block1 block1 block2" "block3 block3 block4" "block5 block5 block4" "block6 block6 block6";
+    width: 95%;
     margin: 0 auto;
   }
 }
@@ -1574,7 +1610,7 @@ html {
     font-size: 32px;
   }
   .manufacture__items {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -1708,8 +1744,11 @@ html {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .manufacture {
+    margin-top: 50px;
+  }
   .manufacture__items {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
   }
 }
@@ -1782,6 +1821,9 @@ html {
   }
   .production__header {
     font-size: 40px;
+  }
+  .manufacture {
+    margin-top: 90px;
   }
   .manufacture__items {
     max-width: 1280px;
