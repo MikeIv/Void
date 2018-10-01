@@ -324,11 +324,12 @@ html {
 }
 .intro {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100vh;
+  padding-top: 100px;
   background-color: #c80066;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -343,8 +344,6 @@ html {
   transition: 1s;
 }
 .intro__image {
-  margin-top: 100px;
-  width: 235px;
   opacity: 0.5;
   transition: 1.3s;
 }
@@ -353,7 +352,6 @@ html {
   transition: 1.3s;
 }
 .intro__contacts {
-  margin-top: 100px;
   margin-bottom: 30px;
   font-size: 20px;
   color: #ffc4df;
@@ -826,6 +824,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.about__block-06--contact {
+  background-image: url("../img/about_background-12.jpg");
 }
 .about__logo-link {
   transition: 1s;
@@ -1706,11 +1707,9 @@ grid-template-areas:
   .main-nav__logo-link {
     display: none;
   }
-  .intro {
-    justify-content: center;
-  }
   .intro__image {
-    width: 650px;
+    margin-top: 60px;
+    width: 550px;
   }
   .intro__contacts {
     display: none;
@@ -1720,9 +1719,9 @@ grid-template-areas:
   }
   .intro__header {
     display: block;
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
-    font-size: 52px;
+    font-size: 45px;
     font-weight: 300;
     color: #ffffff;
     text-transform: uppercase;
@@ -1815,6 +1814,14 @@ grid-template-areas:
   .debug > div {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .intro__image {
+    margin-top: 80px;
+    width: 650px;
+  }
+  .intro__header {
+    margin-top: 90px;
+    font-size: 52px;
   }
   .image-block__slide {
     height: 700px;
