@@ -1,13 +1,21 @@
 .intro {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100vh;
-  padding-top: 100px;
   background-color: @base;
   perspective: 1000px;
+
+  .sm-block({
+    justify-content: center;
+    padding-top: 50px;
+  });
+
+  .xxs-block({
+    justify-content: space-around;
+    align-items: center;
+    padding-top:0;
+  });
 }
 
 .intro__logo-link {
@@ -18,6 +26,10 @@
     transform: rotateY(180deg);
     transition: 1s;
   }
+
+  .xxs-block({
+    margin-top: 100px;
+  });
 
 }
 
@@ -31,13 +43,17 @@
   }
 
   .xlg-block({
-    margin-top: 80px;
+    margin-top: 70px;
     width: 650px;
   });
 
   .lg-block({
-    margin-top: 60px;
+    margin-top: 50px;
     width: 550px;
+  });
+
+  .xxs-block({
+    margin-top: 0;
   });
 }
 
@@ -56,20 +72,16 @@
   .col();
   .size-lg(12);
 
-  .xxs-block({
-    display: none;
-  });
-
-  .xlg-block({
+  .xxlg-block({
     margin-top: 90px;
     font-size: 52px;
   });
 
   .lg-block({
     display: block;
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
-    font-size: 45px;
+    font-size: 42px;
     font-weight: 300;
     color: @white;
     text-transform: uppercase;
@@ -79,5 +91,10 @@
       color: @light;
       transition: 1s;
     }
+  });
+
+
+  .xxs-block({
+    display: none;
   });
 }
