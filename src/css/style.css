@@ -1543,10 +1543,6 @@ grid-template-areas:
   .debug > div > div > div {
     width: calc(4.166666666666667% - 10px);
   }
-  .intro {
-    justify-content: center;
-    padding-top: 50px;
-  }
   .intro__header {
     margin-left: 5px;
     margin-right: 5px;
@@ -1718,6 +1714,10 @@ grid-template-areas:
   }
   .main-nav__logo-link {
     display: none;
+  }
+  .intro {
+    justify-content: center;
+    padding-top: 50px;
   }
   .intro__image {
     margin-top: 50px;
