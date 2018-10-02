@@ -798,6 +798,9 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.about__block-03--contact {
+  background-image: url("../img/about_background-11.jpg");
+}
 .about__block-04 {
   grid-area: block4;
   display: flex;
@@ -807,6 +810,7 @@ html {
   background-color: rgba(255, 196, 223, 0.2);
 }
 .about__block-04--color {
+  height: 400px;
   background-color: #c80066;
 }
 .about__block-05 {
@@ -844,6 +848,7 @@ html {
   text-align: left;
 }
 .about__header--color {
+  margin-bottom: 80px;
   color: #ffc4df;
 }
 .about__txt {
