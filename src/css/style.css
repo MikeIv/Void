@@ -1345,9 +1345,6 @@ grid-template-areas:
   .info__block {
     width: calc(91.66666666666667% - 0px);
   }
-  .image-block {
-    display: none;
-  }
   .invite {
     flex-direction: column-reverse;
   }
@@ -1483,7 +1480,6 @@ grid-template-areas:
     margin-right: 2.5px;
   }
   .image-block {
-    display: block;
     margin-bottom: 70px;
   }
   .image-block__slide {
