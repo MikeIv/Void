@@ -1268,6 +1268,23 @@ grid-template-areas:
 .up-menu__link:hover {
   color: #ff8daf;
 }
+.stickers {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 1000px;
+  overflow: hidden;
+  transition: 1s;
+}
+.stickers__info {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 @media screen and (min-width: 200px) {
   .wrapper {
     padding-left: 0px;
@@ -1434,6 +1451,13 @@ grid-template-areas:
     width: 100%;
     margin: 0 auto;
   }
+  .stickers__info {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .stickers__info {
+    width: calc(91.66666666666667% - 0px);
+  }
 }
 @media screen and (min-width: 560px) {
   .wrapper {
@@ -1519,6 +1543,10 @@ grid-template-areas:
     width: 90%;
     margin: 0 auto;
   }
+  .stickers__info {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
 }
 @media screen and (min-width: 780px) {
   .wrapper {
@@ -1588,6 +1616,10 @@ grid-template-areas:
     grid-template-areas: "block1 block1 block2" "block3 block3 block4" "block5 block5 block4" "block6 block6 block6";
     width: 95%;
     margin: 0 auto;
+  }
+  .stickers__info {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media screen and (min-width: 960px) {
@@ -1813,6 +1845,16 @@ grid-template-areas:
   .manufacture__items {
     width: 85%;
     margin: 0 auto;
+  }
+  .stickers__info {
+    width: calc(50% - 10px);
+  }
+  .stickers__info {
+    display: block;
+    margin-bottom: 50px;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 1410px) {
