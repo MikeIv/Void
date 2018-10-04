@@ -1285,6 +1285,78 @@ grid-template-areas:
   margin-left: 5px;
   margin-right: 5px;
 }
+.stickers__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stickers__block {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.stickers__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stickers__image--border img {
+  border: 2px solid #ff8daf;
+  box-sizing: border-box;
+  transition: 1s;
+}
+.stickers__image--border img:hover {
+  border: 2px solid #c80066;
+  opacity: 0.5;
+  transition: 1s;
+}
+.stickers__header {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #c80066;
+  margin-top: 60px;
+  text-align: left;
+}
+.stickers__header2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #ab0157;
+  margin-top: 30px;
+  text-align: left;
+}
+.stickers__txt {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3d3d3d;
+}
+.stickers__txt-list {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 26px;
+  color: #696969;
+  margin-bottom: 20px;
+}
+.stickers__txt-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3d3d3d;
+  margin-bottom: 15px;
+}
 @media screen and (min-width: 200px) {
   .wrapper {
     padding-left: 0px;
@@ -1458,6 +1530,17 @@ grid-template-areas:
   .stickers__info {
     width: calc(91.66666666666667% - 0px);
   }
+  .stickers__block {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .stickers__block {
+    width: calc(91.66666666666667% - 0px);
+  }
+  .stickers__image {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 560px) {
   .wrapper {
@@ -1547,6 +1630,10 @@ grid-template-areas:
     margin-left: 2.5px;
     margin-right: 2.5px;
   }
+  .stickers__block {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
 }
 @media screen and (min-width: 780px) {
   .wrapper {
@@ -1618,6 +1705,10 @@ grid-template-areas:
     margin: 0 auto;
   }
   .stickers__info {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .stickers__block {
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -1855,6 +1946,13 @@ grid-template-areas:
     margin-left: auto;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .stickers__block {
+    width: calc(50% - 10px);
+  }
+  .stickers__image {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1410px) {
