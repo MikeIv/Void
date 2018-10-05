@@ -294,6 +294,7 @@ html {
           transform-origin: top;
   -webkit-transform: scale(0);
           transform: scale(0);
+  transition-timing-function: ease;
 }
 .main-nav__item--list::before {
   content: "";
@@ -1719,6 +1720,7 @@ grid-template-areas:
     transition: 0.2s;
     -webkit-transform: scale(1);
             transform: scale(1);
+    transition-timing-function: ease;
     opacity: 1;
   }
   .image-block__slide {
